@@ -1,9 +1,4 @@
-<h1>Want to be an online superhero?</h1>
-<section class="community-code">
-	<h2>Enter your code to begin helping others and get your superpowers.</h2>
-	<form name="input" action="sign-up.html" method="get">
-		<p>Community Code: </p><input type="text" name="user" class="text-box"><br>
-		<input type="submit" value="Submit" class="btn">
-		<p><a href="#" class="small-link">How do I get this code?</a></p>
-	</form>
-</section>
+<% unless user_signed_in? %>
+	<%= link_to "Sign up", new_user_registration_path %>
+	<%= link_to "Sign in", new_user_session_path %>
+<% end %>
