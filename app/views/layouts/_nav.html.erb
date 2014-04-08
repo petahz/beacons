@@ -6,7 +6,7 @@
 	<nav>
 		<ul class="main-nav">
 			<li><a href="#">About</a></li>
-			<li><a href="#">Discover</a><li>
+			<li><%= link_to "Discover", discover_path %><li>
       <% if user_signed_in? %>
   			<li><a href="#"><%= image_tag("icon_settings.png", class: "settings") %></a>
   				<ul class="settings">
