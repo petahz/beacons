@@ -1,5 +1,7 @@
-body {
-	background-color: #FFF140;
+div.navigation {
+	background-color: #FFEB00;
+	border-bottom: 7px solid black;
+	height: 200px;
 }
 
 .logo {
@@ -8,9 +10,11 @@ body {
 
 .logo h1 {
 	font-family: 'Bangers', cursive;
-	font-size: 5.5em;
+	font-size: 8em;
 	padding: 0 20px;
-	margin-top: 35px;
+	margin-top: 60px;
+	letter-spacing: 0.1em;
+	text-shadow: 1px 1px 1px darkgray;
 }
 
 nav {
@@ -134,3 +138,18 @@ img.settings {
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 }
+
+
+
+/*clearfix*/
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
