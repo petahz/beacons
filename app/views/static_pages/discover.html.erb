@@ -1,18 +1,39 @@
-<h1>Calling all superheroes. What's your superpower?</h1>
-<section class="projects">
-	<section class="project-1">
-		<h2>Technology</h2>
-		<p>Your Mission: Ben's Lighthouse needs a new website, and you are just the superhero to do it!</p>
-		<a href="#">Start your mission</a>
-	</section>
-	<section class="project-2">
-		<h2>Crafts</h2>
-		<p>Your Mission: Project Sunshine needs Surgi dolls, and you are just the superhero to do it!</p>
-		<a href="project-sunshine.html">Start your mission</a>
-	</section>
-	<section class="project-3">
-		<h2>Making people happy</h2>
-		<p>Your Mission: Soldiers overseas need cards, and you are just the superhero to do it!</p>
-		<a href="#">Start your mission</a>
-	</section>
-</section>
+<h1>What's your superpower?</h1>
+<ul class="custom-menu"> 
+    <li>  
+        <a href="#">
+            <div class="content"> 
+            <h2 class="link">Lightning Power</h2>
+            <h3 class="secondary">Your Mission</h3> 
+            <p class="info"><%= image_tag("lightning_icon.png", id: "project_icons") %></p>
+            <p class="mission">Project Sunshine needs Surgi-dolls, and you are just the superhero to do it.</p>
+            </div>
+        </a> 
+    </li> 
+     
+     
+<li class="custom-menu1"> 
+        <a href="#">
+            <div class="content"> 
+            <h2 class="link">Shapeshifting</h2>
+            <h3 class="secondary">Your Mission</h3> 
+            <p class="info"><%= image_tag("robot_icon.png", id: "project_icons") %></p>
+            <p class="mission">Ben’s Lighthouse needs a new website, and you are just the superhero to do it.</p>
+            </div>
+        </a> 
+    </li> 
+ 
+ 
+ 
+<li class="custom-menu2"> 
+        <a href="#">
+            <div class="content"> 
+            <h2 class="link">Flying</h2>
+            <h3 class="secondary">Your Mission</h3>
+            <p class="info"><%= image_tag("flying_icon.png", id: "project_icons") %></p>
+            <p class="mission">Soldiers overseas need cards, and you are just the superhero to do it.</p>
+            </div>
+        </a> 
+    </li> 
+ 
+</ul>
