@@ -5,4 +5,20 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   validates :email, :password, presence: true
+
+  def owner?
+  	if current_user.role == 'owner'
+  		return true
+  	else
+  		return false
+  	end
+  end
+
+  def hero?
+  	if current_user.role == 'hero'
+  		return true
+  	else
+  		return false
+  	end
+  end
 end

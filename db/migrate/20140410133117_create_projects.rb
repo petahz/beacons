@@ -5,6 +5,7 @@ class CreateProjects < ActiveRecord::Migration
       t.string :description
       t.string :video_url
       t.string :supertype
+      t.belongs_to :user, index: true
     end
   end
 end

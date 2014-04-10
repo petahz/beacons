@@ -3,6 +3,9 @@ class StaticPagesController < ApplicationController
 		@user = User.new
 	end
 
+	def about
+	end
+
 	def discover
 	end
 end
