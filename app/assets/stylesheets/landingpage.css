@@ -1,0 +1,54 @@
+#superhero {
+	padding: 90px 0 120px 0;
+	z-index: 999;
+}
+
+.description {
+	max-width: 40%;
+	float: left;
+	margin: 0 5%;
+}
+
+.user {
+	max-width: 30%;
+	float: right;
+	margin: 5% 10%;
+}
+
+.signup {
+	float: right;
+}
+
+.signin {
+	float: left;
+}
+
+h2.blurb {
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.form {
+	max-width: 40%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.text {
+	padding: 10px;
+	-webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    width: 150px;
+    vertical-align: top;
+
+}
+
+.form-item {
+	padding: 10px;
+}
+
+.user-info-icons {
+	width: 35px;
+	height: 35px;
+}

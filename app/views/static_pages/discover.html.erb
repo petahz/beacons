@@ -1,14 +1,18 @@
-<h1 class="heading">WHAT'S YOUR<br>SUPERPOWER?</h1>
+<div class="title">
+	<h1 class="heading rotate arc">WHAT'S YOUR</h1>
+	<h1 class="heading rotate arc">SUPERPOWER?</h1>
+</div>
+
 <ul class="custom-menu"> 
     <li class="custom-menu1">  
-        <a href="#">
+        <%= link_to(sunshine_path) do %>
             <div class="content"> 
             <h2 class="link">Lightning Power</h2>
             <h3 class="secondary">Your Mission</h3> 
             <p class="info"><%= image_tag("lightning_icon.png", id: "project_icons") %></p>
             <p class="mission">Project Sunshine needs Surgi-dolls, and you are just the superhero to do it.</p>
             </div>
-        </a> 
+        <% end %>
     </li> 
      
      
