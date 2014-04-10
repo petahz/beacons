@@ -10,7 +10,7 @@
       <% if user_signed_in? %>
   			<li><a href="#"><%= image_tag("icon_settings.png", class: "settings") %></a>
   				<ul class="settings">
-  					<li><a href="#">My Mission Board</a></li>
+  					<li><%= link_to "My Mission Board", dashboard_path %></li>
   					<li><%= link_to "Account Settings", edit_user_registration_path %></li>
   					<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
           </ul>

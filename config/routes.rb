@@ -1,8 +1,11 @@
 Beacons::Application.routes.draw do
+  resources :projects
+
   devise_for :users
   root 'static_pages#index'
   get '/discover', to: 'static_pages#discover', as: 'discover'
   get '/about', to: 'static_pages#about', as: 'about'
+  get '/dashboard', to: 'users#dashboard', as: 'dashboard'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

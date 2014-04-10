@@ -1,0 +1,31 @@
+<%= form_for(@project, multipart: true) do |f| %>
+  <% if @project.errors.any? %>
+    <div>
+      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% @project.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.label :name, "Name*" %>
+  <%= f.text_field :name, placeholder: "Project Sunshine", :"required" => "" %>
+  <br />
+
+  <%= f.label :description, "Description" %>
+  <%= f.text_field :description, placeholder: "For kids to shine", :"required" => "" %>
+  <br />
+
+  <%= f.label :video_url, "Video URL for embedding:" %>
+  <%= f.text_field :video_url, placeholder: "http://www.youtube.com", :"required" => "" %>
+  <br />
+
+  <%= f.label :supertype, "Superpower Category*" %>
+  <%= f.select(:supertype, [['Lightning'], ['Shapeshifting'], ['Flying']]) %>
+  <br />
+
+  <%= f.submit class: '' %>
+<% end %>
