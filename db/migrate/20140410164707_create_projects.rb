@@ -6,6 +6,8 @@ class CreateProjects < ActiveRecord::Migration
       t.string :video_url
       t.string :supertype
       t.belongs_to :user, index: true
+
+      t.timestamps
     end
   end
 end

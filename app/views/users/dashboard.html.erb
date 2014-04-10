@@ -1,0 +1,20 @@
+<h2>Your Mission Board</h2>
+
+<p>Your Role:
+<% if @user.owner? %>
+	Non-profit Organization
+<% elsif @user.hero? %>
+	Superhero
+<% end %>
+</p>
+
+<%= link_to "Create New Project", new_project_path %>
+
+<% @user.projects.each do |project| %>
+	<%= project.name %> 
+	<% if @user.owner? %>
+		<%= link_to "Edit", edit_project_path(project) %>
+	<% elsif @user.hero? %>
+		<%= link_to "View", project_path(project) %>
+	<% end %>
+<% end %>
