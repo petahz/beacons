@@ -5,10 +5,11 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  validates :email, :password, presence: true
+  validates :email, presence: true
+  validates :username, :email, uniqueness: { case_sensitive: false }
 
   def owner?
-  	if current_user.role == 'owner'
+  	if role == 'owner'
   		return true
   	else
   		return false
@@ -16,7 +17,7 @@ class User < ActiveRecord::Base
   end
 
   def hero?
-  	if current_user.role == 'hero'
+  	if role == 'hero'
   		return true
   	else
   		return false

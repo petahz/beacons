@@ -1,20 +1,26 @@
-<h2>Your Mission Board</h2>
+<h2>Mission Board</h2>
 
 <p>Your Role:
-<% if @user.owner? %>
+<% if current_user.owner? %>
 	Non-profit Organization
-<% elsif @user.hero? %>
+<% elsif current_user.hero? %>
 	Superhero
 <% end %>
 </p>
 
-<%= link_to "Create New Project", new_project_path %>
+<% if current_user.owner? %>
+	<%= link_to "Create New Project", new_project_path %>
+<% end %>
 
-<% @user.projects.each do |project| %>
-	<%= project.name %> 
-	<% if @user.owner? %>
-		<%= link_to "Edit", edit_project_path(project) %>
-	<% elsif @user.hero? %>
-		<%= link_to "View", project_path(project) %>
+<% if false %>
+
+	<% @user.projects.each do |project| %>
+		<%= project.name %> 
+		<% if @user.owner? %>
+			<%= link_to "Edit", edit_project_path(project) %>
+		<% elsif @user.hero? %>
+			<%= link_to "View", project_path(project) %>
+		<% end %>
 	<% end %>
+
 <% end %>
