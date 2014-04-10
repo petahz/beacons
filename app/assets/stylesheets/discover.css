@@ -1,5 +1,5 @@
 .custom-menu {
-margin: 90px auto;  
+margin: 50px auto;  
 height: 400px; 
 width: 76%
 } 
@@ -31,7 +31,7 @@ font-family: Helvetica, ;
  
  
 .custom-menu li:hover {
-border: 5px solid #29abe2;
+border: 5px solid #F30021;
 background-color: #014B67;
   
 } 
@@ -59,8 +59,9 @@ font-size: 34px;
  
 .secondary { 
 color: #fff; 
-font-family: 'Aldrich', sans-serif;
+font-family: 'Advent Pro', sans-serif;
 font-weight: 700;
+font-size: 1.7em;
 transition: 500ms;
 -webkit-transition: 500ms; /* Safari & Chrome */
 -o-transition: 500ms; /* Opera */
@@ -68,9 +69,9 @@ transition: 500ms;
 } 
  
 .custom-menu li:hover .secondary { 
- background-color: #29abe2; 
+ background-color: #F30021; 
  height: 30px; 
- padding-top: 4px; 
+ padding-top: 10px; 
 } 
  
 .info { 
@@ -109,8 +110,9 @@ transform: translateY(-135px) rotate(0deg);
 -o-transform: translateY(-135px) rotate(0deg); /* Opera */
 -moz-transform: translateY(-135px) rotate(0deg); /* Old Firefox */
 color: white;
-font-family: 'Aldrich', sans-serif;
-line-height: 2em;
+font-family: 'Advent Pro', sans-serif;
+line-height: 1.5em;
+font-size: 1.2em;
 padding: 10px;
 } 
  
@@ -121,14 +123,16 @@ padding: 10px;
  
 /* Colors */
 li.custom-menu1:hover { 
+	background-color: #000;
 }
   
 li.custom-menu2:hover { 
+	background-color: #000;
 } 
  
 
 li.custom-menu3:hover {
- 
+	background-color: #000;
 } 
 
 img#project_icons {
