@@ -1,18 +1,35 @@
+<div class="top">
+	<h1 class="heading rotate arc title" id="superpower">Lightning</h1>
+	<h2>Mission: Send Sunny Grams to save the day.</h2>
+</div>
 
-<h1>Make crafts to save the day. And get the flying superpower while you’re at it.</h1>
+<ul class="step-nav stickyribbon">
+	<li><a href="#learn">Step 1</a></li>
+	<li><a href="#volunteer">Step 2</a></li>
+	<li><a href="#make">Step 3</a></li>
+	<li><a href="#send">Step 4</a></li>
+	<li><a href="#savetheday">Step 5</a></li>
+</ul>
 
-<ol class="steps">
-	<li><h2>Make the Surgi Dolls.</h2></li>
-	<li><h2>Take a picture and upload it.</h2></li>
-		<form action="#" method="post">
-			<p>Choose your file to upload:<br>
-				<input type="file" name="datafile" size="40">
-			</p>
-			<div>
-				<input type="submit" value="Send">
-			</div>
-		</form>
-	<li><h2>Submit your photo to get your superpower.</h2></li>
-	<li><h2>Send the Surgi Dolls.</h2></li>
-	<li><h2>Save the day.</h2></li>
+<ol class="steps circles-list">
+	<li id="learn">
+		<%= image_tag("icon_learn.png", class: "step-icons") %>
+		<h2>Learn about your mission.</h2>
+	</li>
+	<li id="volunteer">
+		<%= image_tag("volunteer_icon.png", class: "step-icons") %>
+		<h2>Tell Project Sunshine that you are on board.</h2>
+		<p>Sign up <a href="http://projectsunshine.org/information.php" target="_blank">here</a> to receive more instructions on your mission.</p>
+	</li>
+	<li id="make">
+		<%= image_tag("make_icon.png", class: "step-icons") %><h2>Complete your mission.</h2>
+		<p>Use your awesome superpowers to make some Sunny Grams for kids who need some sunshine!</p>
+	</li>
+	<li id="send">
+		<%= image_tag("send_icon.png", class: "step-icons") %><h2>Send the Sunny Grams.</h2>
+		<p>Once Project Sunshine lets us know they got your Sunny Grams, you will be awarded your super power!</p></li>
+	<li id="savetheday">
+		<%= image_tag("savetheday_icon.png", class: "step-icons") %>
+		<h2>Save the day.</h2>
+	</li>
 </ol>
