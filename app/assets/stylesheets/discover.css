@@ -1,18 +1,19 @@
 .custom-menu {
-margin: 50px auto;  
+margin: 50px 10%;  
 height: 400px; 
-width: 76%
+max-width: 80%%
 } 
  
  
 .custom-menu li { 
-width: 300px;
+max-width: 30%;
+min-width: 230px;
 height: 300px;
 overflow: hidden;
 position: relative;
 float: left;
 background: #fff;
-margin: 20px; 
+margin: 20px 0 20px 3%; 
 border: 5px solid #e3e3e3;
 border-radius: 10px; 
 transition: 500ms; 
@@ -20,6 +21,10 @@ transition: 500ms;
 -o-transition: 500ms; /* Opera */
 -moz-transition: 500ms; /* Old firefox */
  
+}
+
+li.custom-menu1 {
+	margin-left: 0;
 } 
  
 .custom-menu li a { 
