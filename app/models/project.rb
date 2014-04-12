@@ -1,5 +1,6 @@
 class Project < ActiveRecord::Base
-  belongs_to :user
+  has_many :connections
+  has_many :users, through: :connections
 
   validates :name, :supertype, presence: true
 end

@@ -1,0 +1,12 @@
+<h2>Mission Board</h2>
+
+<p>Your Role: Superhero</p>
+
+<% if @user.projects %>
+
+	<% @user.projects.each do |project| %>
+		<%= project.name %> 
+			<%= link_to "View", project_path(project) %>
+	<% end %>
+
+<% end %>
