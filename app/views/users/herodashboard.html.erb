@@ -2,11 +2,18 @@
 
 <p>Your Role: Superhero</p>
 
-<% if @user.projects %>
+<% unless Connection.where(user_id: current_user.id).blank? %>
 
 	<% @user.projects.each do |project| %>
 		<%= project.name %> 
 			<%= link_to "View", project_path(project) %>
 	<% end %>
+
+<% else %>
+
+	<p>You don't have any missions yet! Visit the
+		<%= link_to "Discover", discover_path %>
+		page to see who needs your help.
+	</p>
 
 <% end %>

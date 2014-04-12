@@ -2,6 +2,8 @@ class ProjectsController < ApplicationController
 	before_action :find_project, only: [:show, :edit, :update, :destroy]
 
 	def show
+		# Ability to create new connection on project's show page.
+		@connection = Connection.new(user_id: current_user.id, project_id: @project.id)
 	end
 
 	def new
@@ -32,7 +34,8 @@ class ProjectsController < ApplicationController
 
 	def destroy
 		@project.destroy
-		redirect_to dashboard_path
+		redirect_to dashboard_path, notice: "An e-mail has been 
+		sent notifying all heroes of this project's cancellation."
 	end
 
 	private

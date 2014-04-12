@@ -4,7 +4,9 @@
 
 <%= link_to "Create New Project", new_project_path %>
 
-<% if @user.projects %>
+<p>Projects Managed</p>
+
+<% unless Connection.where(user_id: current_user.id).blank? %>
 
 	<% @user.projects.each do |project| %>
 		<%= project.name %> 
