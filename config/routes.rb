@@ -2,6 +2,9 @@ Beacons::Application.routes.draw do
   resources :projects
 
   devise_for :users
+  authenticated :user do
+    root to: 'static_pages#discover', as: "authenticated_root"
+  end
   root 'static_pages#index'
   get '/discover', to: 'static_pages#discover', as: 'discover'
   get '/about', to: 'static_pages#about', as: 'about'
