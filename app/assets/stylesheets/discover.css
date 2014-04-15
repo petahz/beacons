@@ -66,7 +66,7 @@ font-size: 34px;
 color: #fff; 
 font-family: 'playtime-webfont';
 font-weight: 700;
-font-size: 1.7em;
+font-size: 1.6em;
 transition: 500ms;
 -webkit-transition: 500ms; /* Safari & Chrome */
 -o-transition: 500ms; /* Opera */
@@ -76,7 +76,7 @@ transition: 500ms;
 .custom-menu li:hover .secondary { 
  background-color: #F30021; 
  height: 30px; 
- padding-top: 10px; 
+ padding: 7px 0; 
 } 
  
 .info { 

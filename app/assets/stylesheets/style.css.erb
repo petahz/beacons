@@ -1,4 +1,14 @@
 @font-face{ 
+	font-family: 'comic_zine_ot-webfont';
+	src: url('<%= asset_path('comic_zine_ot-webfont.eot') %>');
+	src: url('<%= asset_path('comic_zine_ot-webfont.eot?iefix') %>') format('eot'),
+	     url('<%= asset_path('comic_zine_ot-webfont.woff') %>') format('woff'),
+	     url('<%= asset_path('comic_zine_ot-webfont.ttf') %>') format('truetype'),
+	     url('<%= asset_path('comic_zine_ot-webfont.svg#webfont') %>') format('svg');
+}
+
+
+@font-face{ 
 	font-family: 'helsinki-webfont';
 	src: url('<%= asset_path('helsinki-webfont.eot') %>');
 	src: url('<%= asset_path('helsinki-webfont.eot?iefix') %>') format('eot'),
@@ -97,6 +107,7 @@ h1 {
 	padding: 10px 0 0 0;
 	font-family: 'helsinki-webfont', sans-serif;
 	text-align: center;
+	font-size: 4em;
 	   -webkit-text-stroke: 1px black;
 }
 
@@ -108,16 +119,13 @@ h1.heading {
 	display: block;
 }
 
-h1.projects {
-    text-shadow: #58E 1px 1px, #58E 2px 2px, #58E 3px 3px, #58E 4px 4px, #58E 5px 5px, #58E 6px 6px;
-    left: -6px;
-    top: -6px;
-	font-size: 4em;
-}
-
 h2 {
 	text-align: center;
 	font-family: 'playtime-webfont';
+}
+
+h3 {
+	font-family: 'comic_zine_ot-webfont';
 }
 
 p {
@@ -185,6 +193,7 @@ ul.step-nav li {
 ol {
 	max-width: 50%;
 	margin: 0 auto;
+	list-style-type: none;
 }
 
 ol li{
@@ -201,6 +210,7 @@ ol li{
 	margin: 0 auto;
 	display: block;
 }
+
 
 
 

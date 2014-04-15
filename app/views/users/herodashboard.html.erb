@@ -1,19 +1,21 @@
-<h2>Mission Board</h2>
+<h1>MISSION BOARD</h1>
 
-<p>Your Role: Superhero</p>
+<div class="mission-board">
 
-<% unless Connection.where(user_id: current_user.id).blank? %>
+	<% unless Connection.where(user_id: current_user.id).blank? %>
 
-	<% @user.projects.each do |project| %>
-		<%= project.name %> 
-			<%= link_to "View", project_path(project) %>
+		<% @user.projects.each do |project| %>
+			<%= project.name %> 
+				<%= link_to "View", project_path(project) %>
+		<% end %>
+
+	<% else %>
+
+		<p class="no-missions">YOU DON'T HAVE ANY <span>MISSIONS</span> YET! VISIT THE
+			<span><%= link_to "DISCOVER", discover_path %></span>
+			PAGE TO SEE WHO NEEDS YOUR HELP.
+		</p>
+
 	<% end %>
 
-<% else %>
-
-	<p>You don't have any missions yet! Visit the
-		<%= link_to "Discover", discover_path %>
-		page to see who needs your help.
-	</p>
-
-<% end %>
+</div>
