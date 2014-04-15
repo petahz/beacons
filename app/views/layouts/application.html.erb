@@ -21,6 +21,10 @@
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
 
+<% flash.each do |name, msg| -%>
+      <%= content_tag :div, msg, class: name %>
+<% end -%>
+
 <section class="content">
 	<%= yield %>
 </section>

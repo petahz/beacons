@@ -3,5 +3,10 @@ class UsersController < ApplicationController
 
 	def dashboard
 		@user = User.find(current_user.id)
+		if @user.owner?
+			render 'ownerdashboard'
+		elsif @user.hero?
+			render 'herodashboard'
+		end
 	end
 end
