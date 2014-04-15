@@ -50,7 +50,7 @@ margin-top: 32px;
 .link { 
 font-size: 27px; 
 color: #000000;  
-font-family: 'Bangers', cursive; 
+font-family: 'helsinki-webfont', sans-serif;
 transition: 500ms; 
 -webkit-transition: 500ms;  /* Safari & Chrome */
 -o-transition: 500ms;   /* Opera */
@@ -64,7 +64,7 @@ font-size: 34px;
  
 .secondary { 
 color: #fff; 
-font-family: 'Advent Pro', sans-serif;
+font-family: 'playtime-webfont';
 font-weight: 700;
 font-size: 1.7em;
 transition: 500ms;
@@ -115,7 +115,7 @@ transform: translateY(-135px) rotate(0deg);
 -o-transform: translateY(-135px) rotate(0deg); /* Opera */
 -moz-transform: translateY(-135px) rotate(0deg); /* Old Firefox */
 color: white;
-font-family: 'Advent Pro', sans-serif;
+	font-family: 'playtime-webfont';
 line-height: 1.5em;
 font-size: 1.2em;
 padding: 10px;

@@ -1,15 +1,19 @@
-<div class="description">
-	<h1 class="arc">Become an online</h1>
-	<h1 class="heading rotate arc title" id="superhero">superhero</h1>
-</div>
+<div class="landing">
 
-<div class="user">
+	<div id="wrapper" contenteditable="true" spellcheck="false">
+		<h1 class="arc sub-h1">Become an online</h1>
+		<h1 class="heading rotate arc title" id="superhero">superhero</h1>
+	</div>
 
-	<h2 class="blurb">Beacons matches superhero kids with super cool good causes. Sign up today to start helping others and become an online superhero</h2>
+	<div class="user">
 
-	<% unless user_signed_in? %>
-		<%= link_to "Sign in", new_user_session_path, class: "signin button" %>
-		<%= link_to "Sign up", new_user_registration_path, class: "signup button" %>
-	<% end %>
+		<h2 class="blurb">Beacons matches superhero kids with super cool good causes. Sign up today to start helping others and become an online superhero</h2>
+
+		<% unless user_signed_in? %>
+			<%= link_to "Sign in", new_user_session_path, class: "signin button" %>
+			<%= link_to "Sign up", new_user_registration_path, class: "signup button" %>
+		<% end %>
+
+	</div>
 
 </div>

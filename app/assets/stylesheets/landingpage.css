@@ -4,9 +4,9 @@
 }
 
 .description {
-	max-width: 40%;
+	max-width: 35%;
 	float: left;
-	margin: 0 5%;
+	margin: 0 7.5%;
 }
 
 .user {
@@ -21,6 +21,10 @@
 
 .signin {
 	float: left;
+}
+
+h1.sub-h1 {
+	font-size: 2em;
 }
 
 h2.blurb {
@@ -51,4 +55,20 @@ h2.blurb {
 .user-info-icons {
 	width: 35px;
 	height: 35px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+.description{
+	display: none;
+	float: none;
+}
+
+.user{
+	max-width: 100%;
+	float: none;
+}
+
 }

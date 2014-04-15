@@ -1,0 +1,37 @@
+.footer {
+	background-color: #000;
+	height: 175px;
+	padding: 70px;
+}
+
+.footer p {
+	color: #FFF;
+	font-family: 'helsinki-webfont', sans-serif;
+	text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
+
+.footer li {
+	color: #FFF;
+	list-style-type: none;
+	font-family: 'playtime-webfont';
+	font-size: 0.7em;
+	line-height: 1.8em;
+}
+
+.footer li a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.footer li a:hover {
+	border-bottom: 1px solid white;
+}
+
+.help {
+	float: left;
+}
+
+.social-media {
+	float: left;
+	margin-left: 100px;
+}

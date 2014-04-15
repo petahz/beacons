@@ -74,9 +74,10 @@ nav ul li a {
 	padding: 25px 40px;
 	color: #000000; 
 	text-decoration: none;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 2em;
+	font-family: 'playtime-webfont';
+		font-size: 1em;
 	font-weight: 700;
+	text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
 }
 
 
