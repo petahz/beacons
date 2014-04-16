@@ -5,8 +5,9 @@ class ConnectionsController < ApplicationController
 		if @connection.save and current_user.hero? 
 			redirect_to dashboard_path
 		else
-			flash[:alert] = "Could not sign up."
-			redirect_to project_path(project)
+			flash[:alert] = "Could not sign up. You may have already
+			signed up or you're a non-profit."
+			redirect_to project_path(@project)
 		end
 	end
 

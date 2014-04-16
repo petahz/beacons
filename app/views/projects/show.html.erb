@@ -35,9 +35,11 @@
 			<%= image_tag("volunteer_icon.png", class: "step-icons") %>
 			<h2>TELL <%= @project.name %> YOU ARE ON BOARD.</h2>
 
-			<%= form_for([@project, @connection]) do |f| %>
-				<%= f.submit "I'm on board!" %>
-			<% end %>
+			<div class="create-project">
+				<%= form_for([@project, @connection]) do |f| %>
+					<%= f.submit "I'm on board!", class: "button" %>
+				<% end %>
+			</div>
 
 			<p>Sign up <a href="http://projectsunshine.org/information.php" target="_blank">here</a> to receive more instructions on your mission.</p>
 		</div>
