@@ -39,13 +39,19 @@ h2.blurb {
 	text-align: center;
 }
 
+.form-right {
+	text-align: right;
+	width: 60%;
+}
+
 .text {
 	padding: 10px;
 	-webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
     width: 150px;
-    vertical-align: top;
+    vertical-align: middle;
+    display: table-cell;
 
 }
 

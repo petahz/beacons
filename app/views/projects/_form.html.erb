@@ -1,3 +1,5 @@
+<div class="form-right">
+
 <%= form_for(@project, multipart: true) do |f| %>
   <% if @project.errors.any? %>
     <div>
@@ -11,21 +13,26 @@
     </div>
   <% end %>
 
-  <%= f.label :name, "Name*" %>
-  <%= f.text_field :name, placeholder: "Project Sunshine", :"required" => "" %>
+  <h4><%= f.label :name, "NON-PROFIT NAME*" %>
+  <%= f.text_field :name, placeholder: "e.g., Project Sunshine", class: "text", :"required" => "" %></h4>
   <br />
 
-  <%= f.label :description, "Description*" %>
-  <%= f.text_field :description, placeholder: "For kids to shine", :"required" => "" %>
+  <h4><%= f.label :description, "DESCRIPTION OF THE MISSION*" %>
+  <%= f.text_field :description, placeholder: "e.g., Make Sunny Grams", class: "text", :"required" => "" %></h4>
   <br />
 
-  <%= f.label :video_url, "Video URL for embedding:" %>
-  <%= f.text_field :video_url, placeholder: "http://www.youtube.com" %>
+  <h4><%= f.label :video_url, "VIDEO URL FOR EMBEDDING:" %>
+  <%= f.text_field :video_url, placeholder: "e.g., http://www.youtube.com", class: "text" %></h4>
   <br />
 
-  <%= f.label :supertype, "Superpower Category*" %>
-  <%= f.select(:supertype, [['Lightning'], ['Shapeshifting'], ['Flying']]) %>
+  <h4><%= f.label :supertype, "SUPERPOWER CATEGORY*" %>
+  <%= f.select(:supertype, [['Lightning'], ['Shapeshifting'], ['Flying']]) %></h4>
   <br />
 
-  <%= f.submit class: '' %>
-<% end %>
+</div>
+
+<div class="create-project">
+    <%= f.submit class: 'button' %>
+  <% end %>
+</div>
+

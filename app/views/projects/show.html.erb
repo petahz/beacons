@@ -1,39 +1,57 @@
-<div class="top">
-	<h1 class="heading rotate arc title" id="superpower">
-		<%= @project.supertype %>
-	</h1>
-	<h2>Mission: 
-		<%= @project.description %>
-	</h2>
+<div class="section sTop">
+	<div class="inner">
+
+		<div class="top clearfix">
+			<div id="power-icon">
+				<%= @project.supertype %>
+			</div>
+			<div id="mission">
+				<h1>YOUR MISSION:</h1>
+				<h2><%= @project.description %></h2>
+			</div>
+		</div>
+	</div>
 </div>
 
-<ul class="step-nav stickyribbon">
-	<li><a href="#learn">Step 1</a></li>
-	<li><a href="#volunteer">Step 2</a></li>
-	<li><a href="#make">Step 3</a></li>
-	<li><a href="#send">Step 4</a></li>
-	<li><a href="#savetheday">Step 5</a></li>
-</ul>
+<div class="subMenu">
+	<div class="inner">
+		<a href="#" id="sTop" class="subNavBtn">Top</a> 
+		<a href="#" id="s1" class="subNavBtn">Step 1</a>
+		<a href="#" id="s2" class="subNavBtn">Step 2</a>
+		<a href="#" id="s3" class="subNavBtn">Step 3</a>
+		<a href="#" id="s4" class="subNavBtn">Step 4</a>
+		<a href="#" id="s5" class="subNavBtn end">Step 5</a>
+	</div>
+</div>
 
-<ol class="steps circles-list">
-	<li id="learn">
-		<%= image_tag("icon_learn.png", class: "step-icons") %>
-		<h2>Learn about your mission.</h2>
-	</li>
-	<li id="volunteer">
-		<%= image_tag("volunteer_icon.png", class: "step-icons") %>
-		<h2>Tell <%= @project.name %> that you are on board.</h2>
-		<p>Sign up <a href="http://projectsunshine.org/information.php" target="_blank">here</a> to receive more instructions on your mission.</p>
-	</li>
-	<li id="make">
-		<%= image_tag("make_icon.png", class: "step-icons") %><h2>Complete your mission.</h2>
-		<p>Use your awesome superpowers to make some Sunny Grams for kids who need some sunshine!</p>
-	</li>
-	<li id="send">
-		<%= image_tag("send_icon.png", class: "step-icons") %><h2>Send the Sunny Grams.</h2>
-		<p>Once <%= @project.name %> lets us know they got your Sunny Grams, you will be awarded your super power!</p></li>
-	<li id="savetheday">
-		<%= image_tag("savetheday_icon.png", class: "step-icons") %>
-		<h2>Save the day.</h2>
-	</li>
-</ol>
+	<div id="learn" class="section s1">
+		<div class="inner">
+			<%= image_tag("icon_learn.png", class: "step-icons") %>
+			<h2>LEARN ABOUT YOUR MISSION.</h2>
+		</div>
+	</div>
+	<div id="volunteer" class="section s2">
+		<div class="inner">		
+			<%= image_tag("volunteer_icon.png", class: "step-icons") %>
+			<h2>TELL <%= @project.name %> YOU ARE ON BOARD.</h2>
+			<p>Sign up <a href="http://projectsunshine.org/information.php" target="_blank">here</a> to receive more instructions on your mission.</p>
+		</div>
+	</div>
+	<div id="make" class="section s3">
+		<div class="inner">
+			<%= image_tag("make_icon.png", class: "step-icons") %><h2>COMPLETE YOUR MISSION.</h2>
+			<p>Use your awesome superpowers to make some Sunny Grams for kids who need some sunshine!</p>
+		</div>
+	</div>
+	<div id="send" class="section s4">
+		<div class="inner">
+			<%= image_tag("send_icon.png", class: "step-icons") %><h2>SEND THE SUNNY GRAMS.</h2>
+			<p>Once <%= @project.name %> lets us know they got your Sunny Grams, you will be awarded your super power!</p>
+		</div>
+	</div>
+	<div id="savetheday" class="section s5">
+		<div class="inner">
+			<%= image_tag("savetheday_icon.png", class: "step-icons") %>
+			<h2>SAVE THE DAY.</h2>
+		</div>
+	</div>
