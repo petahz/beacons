@@ -1,7 +1,5 @@
 .mission-board {
 	margin: 0 auto;
-	width: 50ex;
-	border: 3px solid black;
 	padding: 7px 20px;
 }
 
@@ -13,4 +11,12 @@ p.no-missions {
 
 .no-missions span p {
 	font-family: 'comic_zine_ot-webfont';
+}
+
+.missions {
+	margin: 75px auto 150px auto;
+	border: 3px solid black;
+	padding: 20px 10px;
+	width: 50%;
+
 }

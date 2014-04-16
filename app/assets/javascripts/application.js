@@ -17,5 +17,6 @@
 //= require jquery.smint.js
 //= require jquery.smartmenus.js
 //= require jquery.smartmenus.min.js
+//= require Doubletaptogo.min.js
 //= require turbolinks
 //= require_tree .

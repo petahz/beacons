@@ -2,13 +2,15 @@
 
 <div class="mission-board">
 
-	<% unless Connection.where(user_id: current_user.id).blank? %>
+	<div class="missions">
+		<h2>CURRENT MISSIONS</h2>
+		<p><% unless Connection.where(user_id: current_user.id).blank? %>
 
 		<% @user.projects.each do |project| %>
 			<%= project.name %> 
 				<%= link_to "View", project_path(project) %>
-		<% end %>
-
+		<% end %></p>
+	</div>
 	<% else %>
 
 		<p class="no-missions">YOU DON'T HAVE ANY <span>MISSIONS</span> YET! VISIT THE

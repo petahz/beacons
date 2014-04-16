@@ -28,6 +28,8 @@ background: linear-gradient(to bottom right, #fff799, #FFEB00); /* Standard synt
 	text-shadow: 1px 1px 1px darkgray;
 }
 
+/*MAIN NAV*/
+
 nav {
 	float: right;
 }
@@ -85,7 +87,7 @@ nav ul li a {
 
 
 nav ul ul {
-	background: #5f6975; border-radius: 0px; padding: 0;
+	background: #000000; border-radius: 0px; padding: 0;
 	position: absolute; top: 100%;
 }
 	nav ul ul li {
