@@ -14,6 +14,8 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require jquery.arctext
-//= require jquery.sticky
+//= require jquery.smint.js
+//= require jquery.smartmenus.js
+//= require jquery.smartmenus.min.js
 //= require turbolinks
 //= require_tree .

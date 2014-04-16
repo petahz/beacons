@@ -1,21 +1,21 @@
 <div class="navigation clearfix" id="grad">
-	<section class="logo">
+  <section class="logo">
 <!--    <h1>Beacons</h1>-->
-	</section>
+  </section>
 
-	<nav>
-		<ul class="main-nav">
-			<li><%= link_to "ABOUT", about_path %></li>
-			<li><%= link_to "DISCOVER", discover_path %><li>
+  <nav>
+    <ul class="main-nav">
+      <li><%= link_to "ABOUT", about_path %></li>
+      <li><%= link_to "DISCOVER", discover_path %><li>
       <% if user_signed_in? %>
-  			<li class="drop-down"><a href="#"><%= image_tag("icon_settings.png", class: "settings") %></a>
-  				<ul class="settings">
-  					<li><%= link_to "My Mission Board", dashboard_path %></li>
-  					<li><%= link_to "Account Settings", edit_user_registration_path %></li>
-  					<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+        <li class="drop-down"><a href="#"><%= image_tag("icon_settings.png", class: "settings") %></a>
+          <ul class="settings">
+            <li><%= link_to "My Mission Board", dashboard_path %></li>
+            <li><%= link_to "Account Settings", edit_user_registration_path %></li>
+            <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
           </ul>
         </li>
       <% end %>
-		</ul>
-	</nav>
+    </ul>
+  </nav>
 </div>
