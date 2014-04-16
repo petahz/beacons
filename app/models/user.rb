@@ -9,6 +9,16 @@ class User < ActiveRecord::Base
   validates :email, presence: true
   validates :username, :email, uniqueness: { case_sensitive: false }
 
+  scope :heros, -> { where(role: "hero")}
+
+  def admin?
+    if role == 'admin'
+      return true
+    else
+      return false
+    end
+  end
+
   def owner?
   	if role == 'owner'
   		return true

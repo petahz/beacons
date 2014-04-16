@@ -10,12 +10,14 @@ User.delete_all
 Project.delete_all
 Connection.delete_all
 
-User.create!(username: "projectsunshine",
+User.create!(id: 1,
+	username: "projectsunshine",
 	email: "person@projectsunshine.org",
 	password: "letitshine",
 	role: "owner")
 
-Project.create!(name: "Project Sunshine",
+Project.create!(id: 1,
+	name: "Project Sunshine",
 	description: "Send Sunny Grams to save the day.",
 	supertype: "Lightning")
 

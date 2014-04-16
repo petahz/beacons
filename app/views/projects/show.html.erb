@@ -8,11 +8,11 @@
 </div>
 
 <ul class="step-nav stickyribbon">
-	<li><a href="#learn">Step 1</a></li>
-	<li><a href="#volunteer">Step 2</a></li>
-	<li><a href="#make">Step 3</a></li>
-	<li><a href="#send">Step 4</a></li>
-	<li><a href="#savetheday">Step 5</a></li>
+	<li id="step1"><a href="#learn">Step 1</a></li>
+	<li id="step2"><a href="#volunteer">Step 2</a></li>
+	<li id="step3"><a href="#make">Step 3</a></li>
+	<li id="step4"><a href="#send">Step 4</a></li>
+	<li id="step5"><a href="#savetheday">Step 5</a></li>
 </ul>
 
 <ol class="steps circles-list">
@@ -23,6 +23,9 @@
 	<li id="volunteer">
 		<%= image_tag("volunteer_icon.png", class: "step-icons") %>
 		<h2>Tell <%= @project.name %> that you are on board.</h2>
+		<%= form_for([@project, @connection]) do |f| %>
+			<%= f.submit "I'm on board!" %>
+		<% end %>
 		<p>Sign up <a href="http://projectsunshine.org/information.php" target="_blank">here</a> to receive more instructions on your mission.</p>
 	</li>
 	<li id="make">

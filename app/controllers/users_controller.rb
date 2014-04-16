@@ -7,6 +7,8 @@ class UsersController < ApplicationController
 			render 'ownerdashboard'
 		elsif @user.hero?
 			render 'herodashboard'
+		elsif @user.admin?
+			render 'admindashboard'
 		end
 	end
 end
