@@ -3,7 +3,7 @@
 
 		<div class="top clearfix">
 			<div id="power-icon">
-				<%= @project.supertype %>
+				<%= image_tag(@project.supertype.downcase.to_s + "_icon.png", class: "step-icons") %>
 			</div>
 			<div id="mission">
 				<h1>YOUR MISSION:</h1>

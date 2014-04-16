@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
   validates :username, :email, uniqueness: { case_sensitive: false }
 
   scope :heros, -> { where(role: "hero")}
+  scope :owners, -> { where(role: "owner")}
 
   def admin?
     if role == 'admin'

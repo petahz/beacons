@@ -28,6 +28,7 @@ class ProjectsController < ApplicationController
 		if @project.update(project_params)
 			redirect_to dashboard_path
 		else
+			flash[:alert] = "Not working"
 			render action: 'edit'
 		end
 	end
