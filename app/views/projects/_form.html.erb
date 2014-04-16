@@ -1,5 +1,3 @@
-<div class="form-right">
-
 <%= form_for(@project, multipart: true) do |f| %>
   <% if @project.errors.any? %>
     <div>
@@ -28,8 +26,6 @@
   <h4><%= f.label :supertype, "SUPERPOWER CATEGORY*" %>
   <%= f.select(:supertype, [['Lightning'], ['Shapeshifting'], ['Flying']]) %></h4>
   <br />
-
-</div>
 
 <div class="create-project">
     <%= f.submit class: 'button' %>

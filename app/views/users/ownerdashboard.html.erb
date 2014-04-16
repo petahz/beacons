@@ -10,11 +10,11 @@
 	<div class="dashboard">
 		<p><% unless Connection.where(user_id: current_user.id).blank? %>
 
-				<% @user.projects.each do |project| %>
+				<% @user.projects.uniq.each do |project| %>
 					<%= project.name %> 
 					<%= link_to "View", project_path(project) %>
 					<%= link_to "Edit", edit_project_path(project) %>
-					<%= link_to "Cancel Project", project, method: :delete, data: { confirm: 'Are you sure you want to cancel this project? An e-mail notification would be sent out to all participants.'} %>
+					<%= link_to "Cancel Project", project, method: :delete, data: { confirm: 'Are you sure you want to cancel this project? All users would be notified automatically.'} %>
 					<p>The Superhero Participants</p>
 						<% project.users.heros.each do |hero| %>
 							<%= hero.username %>
