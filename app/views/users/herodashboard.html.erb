@@ -14,7 +14,7 @@
 				<%= project.name %> 
 					<%= link_to "View", project_path(project) %>
 					<%= link_to "Update", edit_project_connection_path(project_id: project.id, id: connection.id) %>
-					<%= link_to "Disengage", project, method: :delete, data: { confirm: 'Are you looking to leave this mission?' } %>
+					<%= link_to "Disengage", connection, method: :delete, data: { confirm: 'Are you looking to leave this mission?' } %>
 				<% end %>
 		<% end %></p>
 
