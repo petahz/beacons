@@ -6,9 +6,26 @@
 		<h2>CURRENT MISSIONS</h2>
 		<p><% unless Connection.where(user_id: current_user.id).blank? %>
 
+		<h5>Ongoing</h5>
+
 		<% @user.projects.each do |project| %>
-			<%= project.name %> 
-				<%= link_to "View", project_path(project) %>
+			<% connection = Connection.where(user_id: current_user.id, project_id: project.id).first %>
+			<% if connection.status == "active" %>
+				<%= project.name %> 
+					<%= link_to "View", project_path(project) %>
+					<%= link_to "Disengage", project, method: :delete, data: { confirm: 'Are you looking to leave this mission?' } %>
+				<% end %>
+		<% end %></p>
+
+		<h5>Completed</h5>
+
+		<% @user.projects.each do |project| %>
+			<% connection = Connection.where(user_id: current_user.id, project_id: project.id).first %>
+			<% if connection.status == "completed" %>
+				<%= project.name %> 
+					<%= link_to "View", project_path(project) %>
+					<%= link_to "Disengage", project, method: :delete, data: { confirm: 'Are you looking to leave this mission?' } %>
+				<% end %>
 		<% end %></p>
 	</div>
 	<% else %>
