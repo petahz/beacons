@@ -4,6 +4,8 @@ class Connection < ActiveRecord::Base
 
 	validates_uniqueness_of :user_id, scope: :project_id
 
+	mount_uploader :image, ImageUploader
+
 	scope :active, -> { where(status: "active") }
 	scope :completed, -> { where(status: "completed") }
 

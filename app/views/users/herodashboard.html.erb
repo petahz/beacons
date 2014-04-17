@@ -13,6 +13,7 @@
 			<% if connection.status == "active" %>
 				<%= project.name %> 
 					<%= link_to "View", project_path(project) %>
+					<%= link_to "Update", edit_project_connection_path(project_id: project.id, id: connection.id) %>
 					<%= link_to "Disengage", project, method: :delete, data: { confirm: 'Are you looking to leave this mission?' } %>
 				<% end %>
 		<% end %></p>
@@ -24,8 +25,11 @@
 			<% if connection.status == "completed" %>
 				<%= project.name %> 
 					<%= link_to "View", project_path(project) %>
-					<%= link_to "Disengage", project, method: :delete, data: { confirm: 'Are you looking to leave this mission?' } %>
-				<% end %>
+					<%= link_to "Update", edit_project_connection_path(project_id: project.id, id: connection.id) %>
+					<%= image_tag(connection.image.thumb.url) if connection.image? %>
+			<% else %>
+				<i>None yet.</i>		
+			<% end %>
 		<% end %></p>
 	</div>
 	<% else %>

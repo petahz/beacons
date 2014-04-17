@@ -1,0 +1,24 @@
+<h1>Status of this project</h1>
+
+<div class="form">
+
+<h4><%= @project.name %></h4>
+<br />
+
+<%= form_for(@connection, multipart: true) do |f| %>
+
+	<h4><%= f.label :image, "Upload Finished Product:" %>
+	<%= image_tag(@connection.image.thumb.url) if @connection.image? %>
+	<%= f.file_field :image %></h4>
+	<br />
+
+	<h4><%= f.label :status, "Status:" %>
+  <%= f.select(:status, [['active'], ['completed']]) %></h4>
+  	<br />
+
+	<div class="create-project">
+	    <%= f.submit class: 'button' %>
+	</div>
+<% end %>
+
+</div>

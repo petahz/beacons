@@ -28,6 +28,9 @@
 		<div class="inner">
 			<%= image_tag("icon_learn.png", class: "step-icons") %>
 			<h2>LEARN ABOUT YOUR MISSION.</h2>
+			<div class="video">
+				<iframe width="560" height="315" src="<%= @project.video_url %>&" frameborder="0" allowfullscreen></iframe>
+			</div>
 		</div>
 	</div>
 	<div id="volunteer" class="section s2">
