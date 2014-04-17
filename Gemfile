@@ -5,6 +5,7 @@ gem 'rails', '4.0.4'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
+  gem 'rails-erd'
   gem 'rspec-rails', '2.13.1'
 end
 
@@ -16,7 +17,10 @@ end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
+# Functionality
 gem 'devise'
+gem 'carrierwave'
+gem 'mini_magick'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

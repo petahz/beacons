@@ -19,7 +19,8 @@ User.create!(id: 1,
 Project.create!(id: 1,
 	name: "Project Sunshine",
 	description: "Send Sunny Grams to save the day.",
-	supertype: "Lightning")
+	supertype: "Lightning",
+	videourl: "//www.youtube.com/embed/NMPRcBN4K20&")
 
 Connection.create!(user_id: 1,
 	project_id: 1)

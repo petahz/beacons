@@ -28,12 +28,15 @@
 		<div class="inner">
 			<%= image_tag("icon_learn.png", class: "step-icons") %>
 			<h2>LEARN ABOUT YOUR MISSION.</h2>
+			<div class="video">
+				<iframe width="560" height="315" src="<%= @project.video_url %>" frameborder="0" allowfullscreen></iframe>
+			</div>
 		</div>
 	</div>
 	<div id="volunteer" class="section s2">
 		<div class="inner">		
 			<%= image_tag("volunteer_icon.png", class: "step-icons") %>
-			<h2>TELL <%= @project.name %> YOU ARE ON BOARD.</h2>
+			<h2>TELL <%= @project.name.upcase %> YOU ARE ON BOARD.</h2>
 
 			<div class="create-project">
 				<%= form_for([@project, @connection]) do |f| %>

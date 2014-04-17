@@ -3,6 +3,8 @@ Beacons::Application.routes.draw do
     resources :connections
   end
 
+  resources :connections
+
   devise_for :users
   authenticated :user do
     root to: 'static_pages#discover', as: "authenticated_root"
