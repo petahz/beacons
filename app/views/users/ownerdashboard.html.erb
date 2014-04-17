@@ -8,19 +8,20 @@
 	<h2>PROJECTS MANAGED</h2>
 
 	<div class="dashboard">
-		<p><% unless Connection.where(user_id: current_user.id).blank? %>
-
+		<% unless Connection.where(user_id: current_user.id).blank? %>
+			<p>
 				<% @user.projects.uniq.each do |project| %>
-					<%= project.name %> 
+					<p><%= project.name %></p>
 					<%= link_to "View", project_path(project) %>
 					<%= link_to "Edit", edit_project_path(project) %>
 					<%= link_to "Cancel Project", project, method: :delete, data: { confirm: 'Are you sure you want to cancel this project? All users would be notified automatically.'} %>
-					<p>The Superhero Participants</p>
+					<p>Your Superheroes:</p>
 						<% project.users.heros.each do |hero| %>
 							<%= hero.username %>
 						<% end %>
+					<p></p>
 				<% end %>
-			<% end %>
-		</p>
+			</p>
+		<% end %>
 	</div>
 </div>
