@@ -5,12 +5,12 @@
 
 p.no-missions {
 	text-align: center;
-	font-family: 'playtime-webfont';
+	font-family: Arial, sans-serif;
 	font-size: 1.5em;
 }
 
 .no-missions span p {
-	font-family: 'comic_zine_ot-webfont';
+	font-family: Arial, sans-serif;
 }
 
 .missions {
