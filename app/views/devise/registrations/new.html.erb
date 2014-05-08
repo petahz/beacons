@@ -10,6 +10,12 @@
   <div class="form-item"><%= image_tag("email_icon.png", class: "user-info-icons") %>
   <%= f.email_field :email, placeholder: "Email", class: "text" %></div>
 
+  <div class="form-item">
+    <%= f.radio_button :avatar, "boy", checked: true %>
+    <%= image_tag() %>
+    <%= f.radio_button :avatar, "girl" %>
+  </div>
+
   <div class="form-item"><%= image_tag("password_icon.png", class: "user-info-icons") %>
   <%= f.password_field :password, placeholder: "Password", class: "text" %></div>
 
