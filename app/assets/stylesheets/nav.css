@@ -2,30 +2,7 @@
 
 
 div.navigation {
-	background-color: #FFEB00;
-	border-bottom: 7px solid black;
-	height: 70px;
-	margin-bottom: 30px;
-}
-
-#grad {
-background: -webkit-linear-gradient(left top, #fff799, #FFEB00); /* For Safari 5.1 to 6.0 */
-background: -o-linear-gradient(bottom right, #fff799, #FFEB00); /* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient(bottom right, #fff799, #FFEB00); /* For Firefox 3.6 to 15 */
-background: linear-gradient(to bottom right, #fff799, #FFEB00); /* Standard syntax */
-}
-
-.logo {
-	float: left;
-}
-
-.logo h1 {
-	font-family: 'Bangers', cursive;
-	font-size: 5em;
-	padding: 0 20px;
-	margin-top: 10px;
-	letter-spacing: 0.1em;
-	text-shadow: 1px 1px 1px darkgray;
+	background-color: #2897EA;
 }
 
 /*MAIN NAV*/
@@ -64,10 +41,7 @@ nav ul li {
 	float: left;
 }
 	nav ul li:hover {
-		background: #F30021;
-		background: linear-gradient(top, #aa0017 0%, #c2001a 40%);
-		background: -moz-linear-gradient(top, #aa0017 0%, #c2001a 40%);
-		background: -webkit-linear-gradient(top, #aa0017 0%,#c2001a 40%);
+		background: #FFA227;
 	}
 		
 		nav ul li:hover a {
@@ -77,12 +51,10 @@ nav ul li {
 nav ul li a {
 	display: block; 
 	padding: 25px 40px;
-	color: #000000; 
+	color: #FFF; 
 	text-decoration: none;
-	font-family: 'playtime-webfont';
-		font-size: 1em;
-	font-weight: 700;
-	text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+	font-family: Arial, sans-serif;
+	font-size: 1em;
 }
 
 

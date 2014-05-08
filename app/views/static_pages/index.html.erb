@@ -1,17 +1,18 @@
-<div class="clearfix">
+<div class="landing clearfix">
 
 	<div class="description">
-		<h1 class="arc sub-h1">Become an online</h1>
-		<h1 class="heading rotate arc title" id="superhero">superhero</h1>
+		<%= image_tag("beacon_beagle.png") %>
 	</div>
 
 	<div class="user">
-
-		<h2 class="blurb">BEACONS MATCHES SUPERHERO KIDS WITH SUPER COOL GOOD CAUSES. SIGN UP TODAY TO START HELPING OTHERS AND BECOME AN ONLINE SUPERHERO.</h2>
-
-			<%= link_to "Sign in", new_user_session_path, class: "signin button" %>
-			<%= link_to "Sign up", new_user_registration_path, class: "signup button" %>
-
+		<div class="logo">
+			<%= image_tag("logo.png") %>
+		</div>
+		<h2 class="blurb">Beaconheroes.com matches superhero kids to super good causes.</h2>
+		<div class="landing-button">
+			<%= link_to "Sign in", new_user_session_path, class: "signin button2" %>
+			<%= link_to "Get Started", new_user_registration_path, class: "signup button2" %>
+		</div>
 	</div>
 
 </div>

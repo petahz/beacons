@@ -1,19 +1,19 @@
 .footer {
-	background-color: #000;
+	background-color: #2897EA;
 	height: 175px;
 	padding: 70px;
 }
 
 .footer p {
 	color: #FFF;
-	font-family: 'helsinki-webfont', sans-serif;
-	text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+	font-family: Arial, sans-serif;
+	font-weight: 700;
 }
 
 .footer li {
 	color: #FFF;
 	list-style-type: none;
-	font-family: 'playtime-webfont';
+	font-family: Arial, sans-serif;
 	font-size: 0.7em;
 	line-height: 1.8em;
 }

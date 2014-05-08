@@ -36,7 +36,7 @@ font-family: Helvetica, ;
  
  
 .custom-menu li:hover {
-border: 5px solid #F30021;
+border: 5px solid #FFA227;
 background-color: #014B67;
   
 } 
@@ -64,7 +64,7 @@ font-size: 34px;
  
 .secondary { 
 color: #fff; 
-font-family: 'playtime-webfont';
+font-family: Arial, sans-serif;
 font-weight: 700;
 font-size: 1.6em;
 transition: 500ms;
@@ -74,7 +74,7 @@ transition: 500ms;
 } 
  
 .custom-menu li:hover .secondary { 
- background-color: #F30021; 
+ background-color: #FFA227; 
  height: 30px; 
  padding: 7px 0; 
 } 
@@ -115,7 +115,7 @@ transform: translateY(-135px) rotate(0deg);
 -o-transform: translateY(-135px) rotate(0deg); /* Opera */
 -moz-transform: translateY(-135px) rotate(0deg); /* Old Firefox */
 color: white;
-	font-family: 'playtime-webfont';
+	font-family: Arial, sans-serif;
 line-height: 1.5em;
 font-size: 1.2em;
 padding: 10px;

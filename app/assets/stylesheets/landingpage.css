@@ -1,3 +1,7 @@
+.landing {
+	background-color: #2897EA;
+}
+
 #superhero {
 	padding: 90px 0 120px 0;
 	z-index: 999;
@@ -6,13 +10,22 @@
 .description {
 	max-width: 35%;
 	float: left;
-	margin: 0 7.5%;
+	margin: 0 0;
+}
+
+.description img {
+	width: 23em;
 }
 
 .user {
-	max-width: 30%;
+	max-width: 37%;
 	float: right;
 	margin: 5% 10%;
+}
+
+.logo {
+	width: 80%;
+	margin: 0 auto;
 }
 
 .signup {
@@ -29,8 +42,8 @@ h1.sub-h1 {
 
 h2.blurb {
 	font-size: 1.5em;
-	font-weight: 300;
-	font-family: 'playtime-webfont';
+	font-family: Arial, sans-serif;
+	color: white;
 }
 
 .form {
@@ -64,7 +77,9 @@ h2.blurb {
 	height: 35px;
 }
 
-
+.landing-button {
+	padding-top: 20px;
+}
 
 @media screen and (max-width: 800px) {
 
