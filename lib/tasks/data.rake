@@ -14,8 +14,7 @@ namespace :db do
 
 			id_count = 0
 			exists = []
-			users_count.to_i
-			users_count.times do
+			users_count.to_i.times do
 				# This is to work with the unique validations for the username attribute in the User Model.
 				while true
 					name = names[Random.rand(names.length)]
