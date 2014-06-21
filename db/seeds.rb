@@ -6,17 +6,14 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.delete_all
-Project.delete_all
-Connection.delete_all
 
-User.create!(id: 1,
+User.create!(
 	username: "projectsunshine",
 	email: "person@projectsunshine.org",
 	password: "letitshine",
 	role: "owner")
 
-Project.create!(id: 1,
+Project.create!(
 	name: "Project Sunshine",
 	description: "Send Sunny Grams to save the day.",
 	supertype: "Lightning",
